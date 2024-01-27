@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./calculator.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 id="title">CALCULATOR</h1>
+    <p id="description">
+      This is a simple calculator, created using Html, CSS and DOM manipulation.
+      <br />
+      Enjoy by doing your simple calculations such as (addition, Substraction,
+      Multiplication, Division and Remainder division(%) ). using this
+      Calculator.
+    </p>
+
+    <div class="container">
+      <div class="calculator">
+        <input type="text" placeholder="0" id="result" />
+        <button id="clear" onclick="Clear()">AC</button>
+        <button id="clear" onclick="Delete()">DEL</button>
+        <button onclick="display('%')">%</button>
+        <button onclick="display('/')">/</button>
+        <button class="bg-color" onclick="display('7')">7</button>
+        <button class="bg-color" onclick="display('8')">8</button>
+        <button class="bg-color" onclick="display('9')">9</button>
+        <button onclick="display('*')">*</button>
+        <button class="bg-color" onclick="display('4')">4</button>
+        <button class="bg-color" onclick="display('5')">5</button>
+        <button class="bg-color" onclick="display('6')">6</button>
+        <button onclick="display('-')" id="subtract">-</button>
+        <button class="bg-color" onclick="display('1')" id="1">1</button>
+        <button class="bg-color" onclick="display('2')" id="2">2</button>
+        <button class="bg-color" onclick="display('3')" id="3">3</button>
+        <button onclick="display('+')" id="add">+</button>
+        <button onclick="display('.')">.</button>
+        <button class="bg-color" onclick="display('0')">0</button>
+        <button id="equal" onclick="Calculate('')">=</button>
+      </div>
+    </div>
+    
+    <script src="./JS/script.js"></script>
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    
+  </body>
+</html>
